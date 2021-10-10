@@ -10,6 +10,7 @@ namespace WOWmapeditor
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("저는 와우 맵 에디터 입니다.");
         }
     }
 }
