@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unityst_1", "Unityst_1\Unityst_1.csproj", "{FDB7B02D-5BF4-4EF2-A5FF-8000424A14AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WOWmapeditor", "WOWmapeditor\WOWmapeditor.csproj", "{0D3939BE-9EA4-4EF1-98C3-221B1A1A6E83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WOWskilleditor", "WOWskilleditor\WOWskilleditor.csproj", "{C63EE43E-E9C3-49D2-AAAE-1B49B716C87D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDB7B02D-5BF4-4EF2-A5FF-8000424A14AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB7B02D-5BF4-4EF2-A5FF-8000424A14AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB7B02D-5BF4-4EF2-A5FF-8000424A14AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB7B02D-5BF4-4EF2-A5FF-8000424A14AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3939BE-9EA4-4EF1-98C3-221B1A1A6E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3939BE-9EA4-4EF1-98C3-221B1A1A6E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3939BE-9EA4-4EF1-98C3-221B1A1A6E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3939BE-9EA4-4EF1-98C3-221B1A1A6E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C63EE43E-E9C3-49D2-AAAE-1B49B716C87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63EE43E-E9C3-49D2-AAAE-1B49B716C87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63EE43E-E9C3-49D2-AAAE-1B49B716C87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C63EE43E-E9C3-49D2-AAAE-1B49B716C87D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8E292F7-2E9D-411A-936E-A3201B8478F5}
+	EndGlobalSection
+EndGlobal
