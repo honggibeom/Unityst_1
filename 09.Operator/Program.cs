@@ -13,8 +13,8 @@ class Player
     }
 
     public int Plus(int a, int b)
-    { 
-        return a+b
+    {
+        return a + b;
     }
 }
 
