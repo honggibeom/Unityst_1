@@ -141,7 +141,6 @@ class Map {
 
 
     public string[] Setmap() {
-        Setmon();
         string []map1 = new string[32];
         char[][] map = new char[32][];
         for (int i = 0; i < 32; i++) { map[i] = new char[64]; }
@@ -183,6 +182,7 @@ class Map {
     public void play()
     {
         int gameover=0;
+        Setmon();
         Console.WriteLine("\t\t Spaceinvador \n\t\t아무키나 누르세요");
         ConsoleKey a = Console.ReadKey().Key;
         Console.Clear();
@@ -229,6 +229,8 @@ class Map {
                 if (b[i] != null)
                 {
                     b[i].Move();
+                    if (b[i].getY() == 0)
+                        b[i] = null;
                 }
             }
             for (int i = 0; i < 4; i++)
@@ -238,10 +240,9 @@ class Map {
                         mon[i][j].Move();
                 }
             }
-            Thread.Sleep(1);
+            Thread.Sleep(100);
             Console.Clear();
             printMap();
-            char aa = Console.ReadKey().KeyChar;
             gameover = this.gameover();
         }
         if(gameover==-1)
