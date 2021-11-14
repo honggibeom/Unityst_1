@@ -104,7 +104,8 @@ class Player{
 }
 
 class Map {
-
+    int score = 0;
+    string Hp= "♡♡♡";
     Player player = new Player(0);
     Monster[][] mon = new Monster[4][];
     bullet[] b = new bullet[100];
@@ -176,7 +177,7 @@ class Map {
                 Console.WriteLine("\t\t\t"+map[i]);
         }
         Console.WriteLine("\n\n");
-        Console.WriteLine("\t\t점수:  \n\t\t체력:   ");
+        Console.WriteLine("\t\t점수: "+score+"\n\t\t체력: " + Hp);
     }
 
     public void play()
@@ -192,7 +193,6 @@ class Map {
             if (Console.KeyAvailable)
             {
                 a = Console.ReadKey().Key;
-                player.Move(a);
                 if (a == ConsoleKey.Spacebar)
                 {
                     for (int i = 0; i < 100; i++)
@@ -204,6 +204,8 @@ class Map {
                         }
                     }
                 }
+                else
+                    player.Move(a);
             }
             for (int i = 0; i < 100; i++) {
                 if (b[i] != null)
@@ -213,10 +215,12 @@ class Map {
                         {
                             if (mon[k][j].Mondead() == false&& b[i].attack(mon[k][j]))
                             {
+                                score += 10;
                                 mon[k][j].Monattacked();
                                 b[i] = null;
                                 k = 4;
                                 break;
+                                
                             }
                         }
 
@@ -245,16 +249,13 @@ class Map {
             printMap();
             gameover = this.gameover();
         }
-        if(gameover==-1)
+        printMap();
+        if (gameover==-1)
             Console.WriteLine("\t\t you lose ");
         else
             Console.WriteLine("\t\t you win ");
 
     }
-
-
-
-
 
 }
 
